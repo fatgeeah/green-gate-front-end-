@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Green Gate Website</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href='style.css'>
+        <link rel="stylesheet" href='login.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
     <body>
@@ -38,8 +38,25 @@
     </li>
     </ul>
     </div>
-    <div class="image">
-        <img src='greengate.png'>
-    </div>
-    </body>
-</html>        
+
+      <form action="" method="post" class="form">
+        <p class="title">Customer Login</p>
+        <p class="message">Login now and get full access to our app. </p>
+            <div class="flex">
+            <label>
+                <input  type="text"  name="username" id="username" required="" class="input">
+                <span>Username</span>
+            </label>
+        <label>
+            <input type="password" name="pass" id="pass" required="required" class="input">
+            <span>Password</span>
+        </label>
+      </div>  
+      <br>
+      <button class="submit">Login</button>
+        <p class="signin">Not a memeber yet?  <a href = "register.html" >Register</a> </p>
+        <p class="signin">Continue as Guest... <a href = "Guest.html" >Guest Mode</a> </p>
+    </form>
+
+</body>
+</html> 

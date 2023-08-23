@@ -5,8 +5,9 @@
         <meta charset="UTF-8">
         <title>Green Gate Website</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href='style.css'>
+        <link rel="stylesheet" href='feedback.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <script src="https://kit.fontawesome.com/12bf127dfd.js" crossorigin="anonymous"></script>
     </head>
     <body>
     <div class="menu_bar">
@@ -38,8 +39,37 @@
     </li>
     </ul>
     </div>
-    <div class="image">
-        <img src='greengate.png'>
-    </div>
-    </body>
-</html>        
+     <form class="rating-wrapper">
+        <label class="rating-label">Don't forget to leave some feedback...
+            <div class="ratingItemsList">
+                <input class="rating rating-1" id="rating-1-2" type="radio" value="1" name="rating">
+                <label class="rating rating-1" for="rating-1-2">😢</label>
+            
+                <input class="rating rating-2" id="rating-2-2" type="radio" value="1" name="rating">
+                <label class="rating rating-2" for="rating-2-2">🫤</label>
+
+                <input class="rating rating-3" id="rating-3-2" type="radio" value="1" name="rating">
+                <label class="rating rating-3" for="rating-3-2">👌</label>
+
+                <input class="rating rating-4" id="rating-4-2" type="radio" value="1" name="rating">
+                <label class="rating rating-4" for="rating-4-2">😃</label>
+
+                <input class="rating rating-5" id="rating-5-2" type="radio" value="1" name="rating">
+                <label class="rating rating-5" for="rating-5-2">😎</label>
+            
+            </div>
+        </label>
+
+        <div class="feedback">
+            <textarea class="textarea" cols="30" rows="3" placeholder="Write your opinion on our Website's performance..."></textarea>
+            <input type="text" placeholder="Your Name">
+            <br>
+            <button class="submit">Send Feedback</button>
+        </div>
+    </form>
+    
+
+<script scr="feedback.js"></script>  
+    
+</body>
+</html>   
